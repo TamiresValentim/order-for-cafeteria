@@ -11,7 +11,7 @@ import {
   Button
 } from "./styles";
 
-import Codeclub from "./assets/rin.png"
+import Codeclub from "./assets/codeclub.svg"
 
 
 function App() {
