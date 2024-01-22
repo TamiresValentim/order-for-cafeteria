@@ -1,25 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+
+
+import {
+  Contairne,
+  Image,
+  ContairneItens,
+  H1,
+  InputLabel,
+  Input,
+  Button
+} from "./styles";
+
+import Codeclub from "./assets/rin.png"
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+  return <Contairne>
+
+    <Image  src={Codeclub} alt="logo"/>
+    
+    <ContairneItens>
+
+      <H1>Faço o Pedido</H1>
+
+
+      <InputLabel>Pedido</InputLabel>
+      <Input placeHolder="pedido" />
+
+      <InputLabel>Nome do Cliente</InputLabel>
+      <Input placeHolder="nome do cliente" />
+
+      <Button>Novo PEDIDO</Button>
+    </ContairneItens>
+
+
+
+
+
+
+
+  </Contairne>
+
 }
+
 
 export default App;
